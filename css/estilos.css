@@ -1,0 +1,551 @@
+/* soft reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+  }
+
+/* breakpoint width 400px */
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+
+
+} 
+
+  a {
+    text-decoration: none;
+    color: #123456;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+.vbs {
+  cursor: default;
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  top: 0;
+  z-index: 1;
+  color: black;
+  display: block;
+  padding: 16px 10px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #808080;
+  display: block;
+  padding: 2px 10px;
+  font-weight: bold;
+  transition: color 0.5s, border-bottom 0.2s;
+  font-size: 0.8em;
+}
+
+.menu a:active,
+.menu a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+}
+
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  @media(min-width: 560px){
+    .menu {
+      font-size: 1em;
+    }
+  }
+ 
+  .site-title {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.8em;
+  }
+  
+  .site-subtitle {
+    color: #808080;
+    line-height: 1.8em;
+  }
+
+  .sumario {
+    padding-top: 100px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    min-height: 100vh;
+  }
+
+  .sumario-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(200px, 200px);
+    margin-top: 15vh;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @media (min-width: 560px){
+    .sumario-grid{
+      grid-template-columns: auto auto auto;
+      grid-template-rows: minmax(200px, 200px);
+      margin-top: 15vh;
+    }
+  }
+
+  @media (min-width: 1200px){
+    .sumario-grid{
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-rows: minmax(200px, 200px);
+      margin-top: 18vh;
+    }
+  }
+
+  .sumario-icone {
+    text-align: center;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+  }
+
+  .sumario-legenda {
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .sumario-icone:hover {
+    opacity: 1;
+  }
+
+  .sumario-icone:hover ~ .sumario-legenda {
+    opacity: 1;
+  }
+
+  .centro1,
+  .pavilhao1 {
+    width: calc(0.8*200px);
+    height: auto;
+    padding: 10px;
+  }
+
+  .moradia1,
+  .bagulho1 {
+    width: auto;
+    height: calc(0.8*100px);
+    padding: 10px;
+  }
+
+  .viaduto1 {
+    width: calc(0.8*250px);
+    height: auto;
+    padding: 10px;
+  }
+
+  .madeira1 {
+    width: calc(0.8*100px);
+    height: auto;
+    padding: 10px;
+  }
+
+  .seta {
+    display: block;
+    width: 25px;
+    height: auto;
+    margin-top: 28vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .centro,
+  .pavilhao,
+  .moradia,
+  .viaduto,
+  .bagulho,
+  .madeira,
+  .sobre,
+  .curriculo,
+  .habilidades,
+  .contato {
+    padding-top: 9vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-bottom: 40px;
+    min-height: 100vh;
+  }
+
+  .centro h3,
+  .pavilhao h3,
+  .moradia h3,
+  .viaduto h3,
+  .bagulho h3,
+  .madeira h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+  }
+
+  .centro2,
+  .pavilhao2 {
+    display: block;
+    width: calc(0.4*200px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .moradia2,
+  .bagulho2 {
+    display: block;
+    width: auto;
+    height: calc(0.4*100px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .viaduto2 {
+    display: block;
+    width: calc(0.4*250px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .madeira2 {
+    display: block;
+    width: calc(0.4*100px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+
+  .botao {
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 10pt;
+    font-weight: lighter;
+    color: black;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+  }
+
+  .botao:hover {
+    opacity: 1;
+  }
+
+  .info-conteudo {
+    margin-bottom: 50px;
+  }
+
+  .descricao {
+    color: black;
+    font-size: 11pt;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .ficha {
+    color: black;
+    font-size: 11pt;
+    margin-top: 30px;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .hidden>div {
+    display:none;
+  }
+  
+  .visible>div {
+    display:block;
+  }
+
+
+  .img-grid-dupla {
+    width: 33vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .img-grid-unica {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 68.4vw;
+    height: auto;
+  }
+
+
+  .centro-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  .pavilhao-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+    padding: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  .bagulho-grid {
+    display: grid;
+    grid-gap: 1vw;
+    column-gap: 1vw;
+    grid-template-columns: auto auto auto auto;
+    padding: 0px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+      ". v1 h2 h3"
+      ". v1 . ."
+      "h1 v1 v2 ."
+      ". . v2 ."
+      ". v3 v2 h4"
+      ". v3 . h5"
+      ". v3 v4 ."
+      "h6 . v4 ."
+      "h7 . v4 h8"
+  }
+
+  .bagulho-h1 {
+    grid-area: h1;
+  }
+
+  .bagulho-h2 {
+    grid-area: h2;
+  }
+
+  .bagulho-h3 {
+    grid-area: h3;
+  }
+
+  .bagulho-h4 {
+    grid-area: h4;
+  }
+
+  .bagulho-h5 {
+    grid-area: h5;
+  }
+
+  .bagulho-h6 {
+    grid-area: h6;
+  }
+
+  .bagulho-h7 {
+    grid-area: h7;
+  }
+
+  .bagulho-h8 {
+    grid-area: h8;
+  }
+
+  .bagulho-v1 {
+    grid-area: v1;
+  }
+
+  .bagulho-v2 {
+    grid-area: v2;
+  }
+
+  .bagulho-v3 {
+    grid-area: v3;
+  }
+
+  .bagulho-v4 {
+    grid-area: v4;
+  }
+
+  .bagulho-h1,
+  .bagulho-h2,
+  .bagulho-h3,
+  .bagulho-h4,
+  .bagulho-h5,
+  .bagulho-h6,
+  .bagulho-h7,
+  .bagulho-h8 {
+    width: 16vw;
+    height: auto;
+  }
+
+  .bagulho-v1,
+  .bagulho-v2,
+  .bagulho-v3,
+  .bagulho-v4 {
+    width: 16vw;
+    height: auto;
+  }
+
+
+  .sobre h2,
+  .curriculo h2,
+  .habilidades h2,
+  .contato h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: black;
+  }
+
+  .sobre-conteudo {
+    margin-top: 10vh;
+  }
+
+  .sobre .avatar {
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+  
+  .sobre figure{
+    text-align: center;
+  }
+  
+  .sobre .avatar img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 560px) {
+    .sobre .avatar img{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .sobre p{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color: black;
+    line-height: 1.2em;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  @media (min-width: 560px) {
+    .sobre p{
+      line-height: 1.4em;
+    }
+  }
+
+
+
+  .curriculo-grid {
+    margin-top: 4vh;;
+    display: grid;
+    grid-template-columns: 14vw 30vw 22vw;
+    gap: 20px;
+  }
+
+  .normal {
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .bold {
+    font-size: 0.7em;
+    line-height: 1.4em;
+    font-weight: bold;
+  }
+
+
+  .habilidades-conteudo {
+
+  }
+
+  .img-habilidades {
+    display: block;
+    width: 70vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 560px) {
+    .img-habilidades {
+      display: block;
+      width: auto;
+      height: 70vh;
+      margin-top: 10vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+  .contato-conteudo{
+    margin-top: 25vh;
+  }
+
+  .contato p{
+    text-align: center;
+    line-height: 2em;
+  }
+
+  .contato a{
+    color: black;
+    opacity: 0.4;
+    font-size: 1.6em;
+    padding: 0.6em;
+    transition: opacity 0.5s;
+    text-align: center;
+  }
+
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.6em;
+  }
+
+  .contato .grid{
+    gap: 6em;
+    justify-content: center;
+    text-align: center;
+    line-height: 10em;
+  }

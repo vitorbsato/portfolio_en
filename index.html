@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor Berge Sato – Portfólio</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="img/svg/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d7b85c326.js" crossorigin="anonymous"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.text-container').addClass("hidden");
+
+		$('.text-container').click(function() {
+			var $this = $(this);
+
+			if ($this.hasClass("hidden")) {
+				$(this).removeClass("hidden").addClass("visible");
+
+			} else {
+				$(this).removeClass("visible").addClass("hidden");
+			}
+		});
+	});
+</script>
+
+</head>
+<body>
+  <header>
+     <nav class='menu'>
+      <ul>
+        <li class='vbs'>VITOR BERGE SATO</li>
+        <li><a href='#sumario'>projetos</a><li></li>
+        <li><a href='#sobre'>sobre</a><li>
+        <li><a href='#curriculo'>currículo</a><li>
+        <li><a href='#habilidades'>habilidades</a><li>
+        <li><a href='#contato'>contato</a><li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class='sumario' id='sumario'>
+    <div class='sumario-grid'>
+      <div class='sumario-item'>
+          <figure class='sumario-icone'>
+            <a href='#centro'>
+              <img class='centro1' src="./img/svg/centro.svg" alt="Centro Tecnológico">
+            </a>
+          </figure>
+          <div class='sumario-legenda'>
+            CENTRO TECNOLÓGICO
+          </div>
+      </div>
+      <div class='sumario-item'>
+        <figure class='sumario-icone'>
+          <a href='#pavilhao'>
+            <img class='pavilhao1' src="./img/svg/pavilhao.svg" alt="Pavilhão Cultural">
+          </a>
+        </figure>
+        <div class='sumario-legenda'>
+          PAVILHÃO CULTURAL
+        </div>
+      </div>
+      <div class='sumario-item'>
+        <figure class='sumario-icone'>
+          <a href='#moradia'>
+            <img class="moradia1" src="./img/svg/moradia.svg" alt="Moradia Estudantil">
+          </a>
+        </figure>
+        <div class='sumario-legenda'>
+          MORADIA ESTUDANTIL
+        </div>
+      </div>
+      <div class='sumario-item'>
+        <figure class='sumario-icone'>
+          <a href='#viaduto'>
+            <img class="viaduto1" src="./img/svg/viaduto.svg" alt="Baixo Viaduto">
+          </a>
+        </figure>
+        <div class='sumario-legenda'>
+          BAIXO VIADUTO
+        </div>
+      </div>
+      <div class='sumario-item'>
+        <figure class='sumario-icone'>
+          <a href='#bagulho'>
+            <img class="bagulho1" src="./img/svg/bagulho.svg" alt="Bagulho">
+          </a>
+        </figure>
+        <div class='sumario-legenda'>
+          BAGULHO
+        </div>
+      </div>
+      <div class='sumario-item'>
+        <figure class='sumario-icone'>
+          <a href='#madeira'>
+            <img class="madeira1" src="./img/svg/madeira.svg" alt="Madeira">
+          </a>
+        </figure>
+        <div class='sumario-legenda'>
+          MADEIRA
+        </div>
+      </div>            
+    </div>
+    <img class='seta' src='./img/svg/seta.svg'>
+  </section>
+
+  <section class='centro' id='centro'>
+    <img class='centro2' src="./img/svg/centro.svg">
+    <h3>CENTRO TECNOLÓGICO</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, eros id adipiscing congue, lorem ante sagittis elit, id malesuada nibh est sed orci
+          </p>
+          <div class='ficha'>
+            <p>
+              2019 - 2020
+            </p>
+            <p>
+              Colaboradores: Douglas Nascimento dos Santos
+            </p>
+            <p>
+              Ferramentas: AutoCAD, Sketchup, V-Ray, Twinmotion, Photoshop
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/centro/vik.png" alt="Centro Tecnológico">
+    </figure>
+    <figure>
+      <img class='img-grid-unica' src="./img/centro/blox.png" alt="Centro Tecnológico">
+    </figure>
+ 
+    <div class='centro-grid'>
+      <img class='img-grid-dupla' src="./img/centro/diagrama_estrutura.png">
+      <img class='img-grid-dupla' src="./img/centro/diagrama_usos.png">
+      <img class='img-grid-dupla' src="./img/centro/diagrama_passarela.png">
+      <img class='img-grid-dupla' src="./img/centro/areas_blocod.png">
+      <img class='img-grid-dupla' src="./img/centro/blocoab.png">
+      <img class='img-grid-dupla' src="./img/centro/blococ.png">
+    </div>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/centro/laminacobertura.png" alt="Centro Tecnológico">
+    </figure>
+    <figure>
+      <img class='img-grid-unica' src="./img/centro/laminavista.png" alt="Centro Tecnológico">
+    </figure>
+  </section>
+
+  <section class='pavilhao' id='pavilhao'>
+    <img class='pavilhao2' src="./img/svg/pavilhao.svg">
+    <h3>PAVILHÃO CULTURAL</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            A Sé é o coração da cidade São Paulo, como tal é envolto de diversidade e programas culturais. 
+            Estes, no entanto, se fecham em edifícios que abrigam modelos antigos de museus. O Pavilhão se abre para a praça, 
+            ampliando o sítio público como área livre, circundado por rampas que continuam o sentido da rua com uma topografia 
+            reveladora dos ambientes internos. A aparente solidez do jogo de volumes se engana com a fluidez dos espaços, de fora para dentro.
+          </p>
+          <div class='ficha'>
+            <p>
+              2016 - 2019
+            </p>
+            <p>
+              Ferramentas: Maquete física, AutoCAD, Photoshop
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='pavilhao-grid'>
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao1.png">
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao2.png">
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao3.png">
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao4.png">
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao5.png">
+      <img class='img-grid-dupla' src="./img/pavilhao/pavilhao6.png">
+    </div>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/pavilhao/ccs_corte_1-250_ps.png">
+    </figure>
+  </section>
+
+  <section class='moradia' id='moradia'>
+    <img class='moradia2' src="./img/svg/moradia.svg">
+    <h3>MORADIA ESTUDANTIL</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            Habitar fora do campus da universidade proporciona ao estudante o convívio urbano fundamental para todos os cidadãos. 
+            Enquanto edifício público, a moradia estudantil não deve apenas abrigar o universitário, mas abrir as portas para a 
+            população local, servindo-lhe de espaço de lazer e de cultura. Este edifício acomoda grupos de jovens estudantes 
+            e famílias de pesquisadores. No térreo há uma praça e um cinema gratuito.
+          </p>
+          <div class='ficha'>
+            <p>
+              2017-2020
+            </p>
+            <p>
+              Ferramentas: Revit, Photoshop, Illustrator, Sketchup
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/moradia/render.png">
+    </figure>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/moradia/entorno.png">
+    </figure>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/moradia/explodida.png">
+    </figure>
+  </section>
+
+  <section class='viaduto' id='viaduto'>
+    <img class="viaduto2" src="./img/svg/viaduto.svg">
+    <h3>BAIXO VIADUTO</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            As áreas abaixo de viadutos e seu entorno sofrem com a ausência de projeto, configurando não lugares, 
+            propícios à ocupação irregular e precária, sobretudo quando localizadas bem no centro da cidade. 
+            A rejeição desses espaços contradiz com a alta demanda na região. Sua apropriação é inevitável e necessária, 
+            o que deve ser feito com salubridade e qualidade, dando dignidade aos usuários e moradores próximos.
+          </p>
+          <p class='descricao'>
+            Este projeto intervém na existente transposição por baixo do viaduto entre as ruas Dr. Lund e Rua São Paulo, no bairro 
+            do Glicério, dando um caráter cenográfico através de forros de formas livres. Ao final do “túnel” chega-se a uma escadaria, 
+            estruturada também como praça, com patamares que possibilitam estada. A qualificação da passagem dá interesse 
+            para o uso público das áreas abaixo do viaduto.
+          </p>
+          <p class='descricao'>
+            Neste viaduto há duas áreas, uma enclausurada por duas vias descendentes, outra voltada para uma viela de fundos de lote. 
+            A primeira abriga uma biblioteca, é revestida por um forro para não só esconder a estrutura do viaduto 
+            (e o sistema de circulação de ar - necessário para o adequado uso), criando um novo ambiente, mas para diminuir a 
+            relação altura-largura do espaço, opressora no estado atual. A segunda abriga um parque com feira, pista de skate e 
+            quadra poliesportiva.
+          </p>
+          <div class='ficha'>
+            <p>
+              2019
+            </p>
+            <p>
+              Ferramentas: AutoCAD, Photoshop, Rhino, Illustrator
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figure>
+      <img class='img-grid-unica' src="./img/viaduto/viaduto-varios.png">
+    </figure>
+
+    <figure>
+      <img class='img-grid-unica' src="./img/viaduto/vaiduto-solo.png">
+    </figure>
+  </section>
+
+  <section class='bagulho' id='bagulho'>
+    <img class='bagulho2' src="./img/svg/bagulho.svg">
+    <h3>BAGULHO</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            Matéria e tempo são aliados fundamentais, um impõe suas marcas no outro, marcas pelas quais se percebe sua passagem. 
+            Passagem indefinida, relativa às condições da matéria. O homem tenta domar estes dois elementos com sua força de trabalho, 
+            ação transformadora, movida pela tempo e concretizada pela matéria. Eles, no entanto, seguem o próprio rumo não predito 
+            pelo homem, incapaz de fazê-lo pela limitação de sua única potência. A tentativa nunca se esgota, os desvios de rumo 
+            são efeitos de constante transformação do destino, inalcançável e sempre buscado, motivação do verdadeiro desejo: a transformação.
+          </p>
+          <div class='ficha'>
+            <p>
+              2017
+            </p>
+            <p>
+              Colaboradores: Marcelo Hsu de Oliveira, Sandro Manuel Passos de Morais
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='bagulho-grid'>
+      <img class='bagulho-h1' src="./img/bagulho/h1.png">
+      <img class='bagulho-h2' src="./img/bagulho/h2.png">
+      <img class='bagulho-h3' src="./img/bagulho/h3.png">
+      <img class='bagulho-h4' src="./img/bagulho/h4.png">
+      <img class='bagulho-h5' src="./img/bagulho/h5.png">
+      <img class='bagulho-h6' src="./img/bagulho/h6.png">
+      <img class='bagulho-h7' src="./img/bagulho/h7.png">
+      <img class='bagulho-h8' src="./img/bagulho/h8.png">
+      <img class='bagulho-v1' src="./img/bagulho/v1.png">
+      <img class='bagulho-v2' src="./img/bagulho/v2.png">
+      <img class='bagulho-v3' src="./img/bagulho/v3.png">
+      <img class='bagulho-v4' src="./img/bagulho/v4.png">
+    </div>
+  </section>
+
+  <section class='madeira' id='madeira'>
+    <img class='madeira2' src="./img/svg/madeira.svg">
+    <h3>MADEIRA</h3>
+
+    <div class="info">
+      <div class="text-container">
+        <p class='botao'>+ INFO</p>
+        <div class='info-conteudo'>
+          <p class='descricao'>
+            O projetar de um objeto é uma comunicação introspectiva, não exigente de uma linguagem didática, 
+            esta pode se deixar fluir à espontaneidade. O desenhar é apenas o espelho do pensamento, sem compromisso de explicação, 
+            simplesmente sintetiza a visualização do futuro objeto como que para confirmar a acertividade do caminho. 
+            Em caso de erro, é desnecessária a economia, pois o alimento da ideia é a má alocação de recursos. O desenho material 
+            precede o esboço, nele o erro já não pode ser infinito mas seu aprendizado é definitivo. O privilégio de satisfazer-se 
+            com o erro é a virtude daquele que constroi, inatingível apenas com o projeto.
+          </p>
+          <div class='ficha'>
+            <p>
+              2019-2020
+            </p>
+            <p>
+              Técnica: Marcenaria tradicional japonesa
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <section class="sobre" id='sobre'>
+    <h2>SOBRE</h2>
+    <div class='sobre-conteudo'>
+      <figure class='avatar'>
+        <img src='./img/avatar.jpg'>
+      </figure>
+      <p>
+        Arquiteto e urbanista em formação pela FAUUSP.
+        Desde de 2018 realizo pesquisa no LabPlan - Laboratório de Planejamento Urbano e Regional junto à Profa. Dra. Maria Cristina Leme,
+        estudando arquitetura e urbanismo a partir de fontes primárias, organizando e analisando documentos de arquivos inéditos.
+        Durante a graduação, além das atividades projetuais, foquei meus estudos em história, historiografia e patrimônio.
+        Ultimamente venho estudando métodos computacionais, incluindo modelagem tridimensional, programação e manipulação de dados.
+      </p>
+    </div>
+  </section>
+
+  <section class="curriculo" id='curriculo'>
+    <h2>CURRÍCULO</h2>
+    <div class='curriculo-conteudo'>
+      <div class='curriculo-grid'>
+        <div>
+          <p class='bold'>
+            EXPERIÊNCIAS ACADÊMICAS
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+            GRADUAÇÃO
+          </p>
+          <p class='normal'>
+            Arquitetura e Urbanismo
+          </p>
+        </div>
+        <div>
+          <p class='normal'>
+            2016 -
+          </p>
+          <p class='normal'>
+            Universidade de São Paulo / FAUUSP
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+            PESQUISA CIENTÍFICA
+          </p>
+          <p class='normal'>
+            Organização do fundo arquivístico do arquiteto Joaquim Guedes
+          </p>
+        </div>
+        <div>
+          <p class='normal'>
+            2018-2019
+          </p>
+          <p class='normal'>
+            LabPlan / FAUUSP
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+            PESQUISA CIENTÍFICA
+          </p>
+          <p class='normal'>
+            Estudo sobre o escritório ASPLAN S/A - Assessoria em Planejamento
+          </p>
+        </div>
+        <div>
+          <p class='normal'>
+            2019-2020
+          </p>
+          <p class='normal'>
+            LabPlan / FAUUSP
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+            PUBLICAÇÕES E EVENTOS
+          </p>
+        </div>
+        <div>
+          <p class='bold'>
+            APRESENTAÇÃO DE TRABALHO
+          </p>
+          <p class='normal'>
+            SUUB IV - Seminário Urbanismo e Urbanistas no Brasil
+          </p>
+        </div>
+        <div>
+          <p class='normal'>
+            2019
+          </p>
+          <p class='normal'>
+            UFMG, Belo Horizonte
+          </p>
+        </div>
+      <div>
+        <p class='bold'>
+          
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          APRESENTAÇÃO DE TRABALHO
+        </p>
+        <p class='normal'>
+          13º Seminário DocomomoBr
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          2019
+        </p>
+        <p class='normal'>
+          UFBA, Salvador
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          PARTICIPAÇÃO EM CONCURSO
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          PROJETO DE ARQUITETURA
+        </p>
+        <p class='normal'>
+          12º CBCA / ALACERO
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          2019
+        </p>
+        <p class='normal'>
+          
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          FORMAÇÃO COMPLEMENTAR
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          CURSO ONLINE
+        </p>
+        <p class='normal'>
+          Ciência de dados com R e Python
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          2020
+        </p>
+        <p class='normal'>
+          Udemy
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          CURSO ONLINE
+        </p>
+        <p class='normal'>
+          Formações em tecnologia e negócios digitais
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          2020
+        </p>
+        <p class='normal'>
+          Alura
+        </p>
+      </div>
+      <div>
+        <p class='bold'>
+          IDIOMAS
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          Português
+        </p>
+        <p class='normal'>
+          Inglês
+        </p>
+        <p class='normal'>
+          Espanhol
+        </p>
+        <p class='normal'>
+          Italiano
+        </p>
+      </div>
+      <div>
+        <p class='normal'>
+          Nativo
+        </p>
+        <p class='normal'>
+          Avançado
+        </p>
+        <p class='normal'>
+          Avançado
+        </p>
+        <p class='normal'>
+          Iniciante
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades" id='habilidades'>
+    <h2>HABILIDADES</h2>
+    <div class='habilidades-conteudo'>
+      <img class='img-habilidades' src='./img/svg/habilidades.svg'>
+    </div>
+  </section>
+
+  <section class="contato" id='contato'>
+    <h2>CONTATO</h2>
+    <div class='contato-conteudo'>
+      <P>vitorberge@gmail.com</P>
+      <p>+55 11 972698655</p>
+      <div class="grid icons">
+        <a target="_blank" href="https://instagram.com/vitorbsato">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/vitorbsato">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://medium.com/@vitorbsato">
+          <i class="fab fa-medium-m"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/vitorbsato">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+      
+</body>
+</html>
