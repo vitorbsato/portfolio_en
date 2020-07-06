@@ -166,7 +166,7 @@ body {
     padding: 10px;
   }
 
-  .madeira1 {
+  .designios1 {
     width: calc(0.8*100px);
     height: auto;
     padding: 10px;
@@ -187,7 +187,7 @@ body {
   .moradia,
   .viaduto,
   .bagulho,
-  .madeira,
+  .designios,
   .sobre,
   .curriculo,
   .habilidades,
@@ -204,7 +204,7 @@ body {
   .moradia h3,
   .viaduto h3,
   .bagulho h3,
-  .madeira h3 {
+  .designios h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     margin-bottom: 20px;
@@ -241,7 +241,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .madeira2 {
+  .designios2 {
     display: block;
     width: calc(0.4*100px);
     height: auto;
@@ -414,6 +414,99 @@ body {
   .bagulho-v3,
   .bagulho-v4 {
     width: 16vw;
+    height: auto;
+  }
+
+
+  .designios-grid {
+    display: grid;
+    column-gap: 5vw;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "d1 de ."
+    "d1 de ."
+    "d1 de d2"
+    "d1 de d2"
+    ". de d2"
+    "d3 de d2"
+    "d3 de d2"
+    "d3 de d2"
+    "d3 . d2"
+    "d3 . ."
+    "d3 . d4"
+    ". . d4"
+    "dp dp d4"
+    "dp dp d4"
+    ". . d4"
+    "d5 db d4"
+    "d5 db ."
+    "d5 db d6"
+    "d5 db d6"
+    ". db d6"
+    ". db d6"
+    "d7 db ."
+    "d7 db ."
+    "d7 db ."
+    "d7 db ."
+    ;
+    margin-bottom: 200px;
+  }
+
+  .designios-1 {
+    grid-area: d1;
+  }
+
+  .designios-2 {
+    grid-area: d2;
+  }
+
+  .designios-3 {
+    grid-area: d3;
+  }
+
+  .designios-4 {
+    grid-area: d4;
+  }
+
+  .designios-5 {
+    grid-area: d5;
+  }
+
+  .designios-6 {
+    grid-area: d6;
+  }
+
+  .designios-7 {
+    grid-area: d7;
+  }
+
+  .designios-estante {
+    grid-area: de;
+  }
+
+  .designios-prateleira {
+    grid-area: dp;
+  }
+
+  .designios-bolsa {
+    grid-area: db;
+  }
+
+  .designios-1,
+  .designios-2,
+  .designios-3,
+  .designios-4,
+  .designios-5,
+  .designios-6,
+  .designios-7,
+  .designios-estante,
+  .designios-bolsa {
+    width: 20vw;
+    height: auto;
+  }
+
+  .designios-prateleira {
+    width: 40vw;
     height: auto;
   }
 
