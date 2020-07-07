@@ -42,20 +42,54 @@
 	});
 </script>
 
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+  
+
 </head>
 <body>
   <header>
+
      <nav class='menu'>
       <ul>
         <li class='vbs'>VITOR BERGE SATO</li>
-        <li><a href='#sumario'>projetos</a><li></li>
+        <li><a href='#sumario'>projetos</a></li>
         <li><a href='#sobre'>sobre</a><li>
         <li><a href='#curriculo'>currículo</a><li>
         <li><a href='#habilidades'>habilidades</a><li>
         <li><a href='#contato'>contato</a><li>
       </ul>
     </nav>
+
+  
+    <nav class="topnav">
+      <p class="active">VITOR BERGE SATO</p>
+      <div id="myLinks">
+        <a href='#sumario'>projetos</a>
+        <a href='#sobre'>sobre</a>
+        <a href='#curriculo'>currículo</a>
+        <a href='#habilidades'>habilidades</a>
+        <a href='#contato'>contato</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
   </header>
+
+
+
+
 
   <section class='sumario' id='sumario'>
     <div class='sumario-grid'>
@@ -132,7 +166,13 @@
         <p class='botao'>+ INFO</p>
         <div class='info-conteudo'>
           <p class='descricao'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit, eros id adipiscing congue, lorem ante sagittis elit, id malesuada nibh est sed orci
+            Quatro blocos, três deles unidos por uma passarela e todos acolhidos uma única cobertura.
+            O espaço entre os edifícios é a continuidade de um largo que une também o edifício da Prefeitura de Osasco e a estação de trem.
+            A lâmina é paralela aos trilhos, de onde se visualiza a fachada da estrtura porticada por trás do jogo de brise-soleils. 
+            A passarela conecta os diversos programas do complexo e configura em si um espaço próprio, de encontro e de estar. 
+            Sua linha amarela é arrematada por uma estrutura suspensa em um vão de 27 metros. 
+            O Centro Tecnológico teria potencial de confluência social e científica, contribuindo 
+            para o desenvolvimento da Região Metrolpolitana de São Paulo.
           </p>
           <div class='ficha'>
             <p>
@@ -144,6 +184,7 @@
             <p>
               Ferramentas: AutoCAD, Sketchup, V-Ray, Twinmotion, Photoshop
             </p>
+          </div>
         </div>
       </div>
     </div>
@@ -309,7 +350,7 @@
           <p class='descricao'>
             Matéria e tempo são aliados fundamentais, um impõe suas marcas no outro, marcas pelas quais se percebe sua passagem. 
             Passagem indefinida, relativa às condições da matéria. O homem tenta domar estes dois elementos com sua força de trabalho, 
-            ação transformadora, movida pela tempo e concretizada pela matéria. Eles, no entanto, seguem o próprio rumo não predito 
+            ação transformadora, movida pelo tempo e concretizada pela matéria. Eles, no entanto, seguem o próprio rumo não predito 
             pelo homem, incapaz de fazê-lo pela limitação de sua única potência. A tentativa nunca se esgota, os desvios de rumo 
             são efeitos de constante transformação do destino, inalcançável e sempre buscado, motivação do verdadeiro desejo: a transformação.
           </p>
@@ -353,7 +394,7 @@
             esta pode se deixar fluir à espontaneidade. O desenhar é apenas o espelho do pensamento, sem compromisso de explicação, 
             simplesmente sintetiza a visualização do futuro objeto como que para confirmar a acertividade do caminho. 
             Em caso de erro, é desnecessária a economia, pois o alimento da ideia é a má alocação de recursos. O desenho material 
-            precede o esboço, nele o erro já não pode ser infinito mas seu aprendizado é definitivo. O privilégio de satisfazer-se 
+            precede o esboço, nele o erro já não pode ser infinito, mas seu aprendizado é definitivo. O privilégio de satisfazer-se 
             com o erro é a virtude daquele que constroi, inatingível apenas com o projeto.
           </p>
           <div class='ficha'>
@@ -361,7 +402,7 @@
               2016-2020
             </p>
             <p>
-              Técnica: Marcenaria, Costura, Desenho à mão livre
+              Técnicas: Marcenaria, Costura, Desenho à mão livre
             </p>
           </div>
         </div>
@@ -392,7 +433,7 @@
       </figure>
       <p>
         Arquiteto e urbanista em formação pela FAUUSP.
-        Desde de 2018 realizo pesquisa no LabPlan - Laboratório de Planejamento Urbano e Regional junto à Profa. Dra. Maria Cristina Leme,
+        Desde 2018 realizo pesquisa no LabPlan - Laboratório de Planejamento Urbano e Regional junto à Profa. Dra. Maria Cristina Leme,
         estudando arquitetura e urbanismo a partir de fontes primárias, organizando e analisando documentos de arquivos inéditos.
         Durante a graduação, além das atividades projetuais, foquei meus estudos em história, historiografia e patrimônio.
         Ultimamente venho estudando métodos computacionais, incluindo modelagem tridimensional, programação e manipulação de dados.
@@ -611,9 +652,7 @@
 
   <section class="habilidades" id='habilidades'>
     <h2>HABILIDADES</h2>
-    <div class='habilidades-conteudo'>
-      <img class='img-habilidades' src='./img/svg/habilidades.svg'>
-    </div>
+    <img class='img-habilidades' src='./img/svg/habilidades.svg'>
   </section>
 
   <section class="contato" id='contato'>
