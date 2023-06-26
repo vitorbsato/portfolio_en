@@ -362,6 +362,27 @@ body {
     opacity: 1;
   }
 
+    .button  {
+        background-color: black;
+        height: 30px;
+        line-height: 15%;
+        padding:0 40px;
+        font: normal;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 30px;
+    }
+    .button a {
+        color: black;
+        transition: color 0.2s;
+        opacity: 1.0;
+    }
+     .button:hover {
+        opacity: 0.6;
+    }
+
   .info-conteudo {
     margin-bottom: 50px;
   }
